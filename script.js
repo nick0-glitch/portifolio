@@ -1,11 +1,12 @@
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function () {
+
+    // BOTÃO
     document.getElementById("btnMensagem")
     .addEventListener("click", function() {
         alert("Obrigado por visitar meu portfólio!");
     });
-}
 
-window.addEventListener("DOMContentLoaded", function () {
+    // ANIMAÇÃO DAS SEÇÕES
     const secoes = document.querySelectorAll("section");
 
     secoes.forEach((secao, index) => {
@@ -13,4 +14,5 @@ window.addEventListener("DOMContentLoaded", function () {
             secao.classList.add("ativo");
         }, index * 400);
     });
+
 });
