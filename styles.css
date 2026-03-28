@@ -5,14 +5,12 @@ body {
     color: #333;
 }
 
-
 header {
     background-color: #333;
     color: rgb(143, 19, 244);
     padding: 20px;
     text-align: center;
 }
-
 
 nav a {
     color: white;
@@ -25,29 +23,23 @@ nav a:hover {
     color: #00bcd4;
 }
 
-
 section {
     background: rgb(24, 194, 237);
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
     border-radius: 8px;
+
+    /* animação */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
 }
 
-
-h2 {
-    border-bottom: 2px solid #ddd;
+section.ativo {
+    opacity: 1;
+    transform: translateY(0);
 }
-
-
-ul {
-    padding: 0;
-}
-
-li {
-    margin: 5px 0;
-}
-
 
 button {
     display: block;
@@ -61,15 +53,4 @@ button {
 
 button:hover {
     background-color: #24b82e;
-}
-
-section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease;
-}
-
-section.ativo {
-    opacity: 1;
-    transform: translateY(0);
 }
